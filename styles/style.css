@@ -11,6 +11,28 @@
 */
 
 .page {
+  display: grid;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  color: var(--color);
+  font-family: var(--font-base), sans-serif;
+  font-variation-settings: "wght" var(--wght);
+  font-size: var(--font-size);
+  background-image: var(--cover);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: var(--page-bg-color);
+  padding-block-start: 100px;
+}
+
+.header {
+  display: grid;
+  width: 100%;
+}
+
+.welcome {
+  border: 2px solid var(--contour-color);
+  background-color: var(--page-bg-color);
+  max-inline-size: 696px;
+  margin: 0 auto;
 }
