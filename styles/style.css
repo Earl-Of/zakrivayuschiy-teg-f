@@ -36,3 +36,26 @@
   max-inline-size: 696px;
   margin: 0 auto;
 }
+
+.title__decor {
+  display: block;
+  font-family: var(--font-accent), fantasy;
+  font-size: var(--hero-title);
+  margin-block-start: clamp(122px, calc(0.00751 * 100vw + 119.18px), 130px);
+  align-items: center;
+  justify-content: center;
+  margin-block-end: 20px;
+  text-align: center;
+}
+
+.hero__title {
+  display: grid;
+  max-inline-size: 696px;
+  width: 100%;
+  font-size: var(--hero-subtitle);
+  text-align: center;
+  align-content: center;
+  font-family: var(--font-accent), fantasy;
+  text-transform: uppercase;
+  margin-block-end: clamp(122px, calc(0.00751 * 100vw + 119.18px), 130px);
+}
