@@ -33,7 +33,7 @@
 .welcome {
   border: 2px solid var(--contour-color);
   background-color: var(--page-bg-color);
-  max-inline-size: 696px;
+  max-inline-size: 703px;
   margin: 0 auto;
 }
 
@@ -50,7 +50,7 @@
 
 .hero__title {
   display: grid;
-  max-inline-size: 696px;
+  max-inline-size: 695px;
   width: 100%;
   font-size: var(--hero-subtitle);
   text-align: center;
@@ -111,7 +111,7 @@ main {
 
 .card__title {
   font-variation-settings: "wght" var(--card-title-wght);
-  padding: 2px 10px;
+  padding: 4px 10px;
   font-family: var(--font-base), sans-serif;
   font-size: var(--font-size);
   border-block-end: 2px solid var(--border-color);
@@ -132,7 +132,7 @@ main {
 .card__details {
   display: grid;
   font-family: var(--font-base), sans-serif;
-  border-block-start: 2px solid var(--border-color);
+  border-block-start: 3px solid var(--border-color);
   padding: 25px;
   gap: 25px;
 }
@@ -147,7 +147,7 @@ main {
   background: transparent;
   color: var(--color);
   cursor: pointer;
-  margin: 0;
+  margin: 0px -8px 0px 0px;
   box-sizing: border-box;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
@@ -173,6 +173,13 @@ main {
   display: flex;
   gap: 5px;
   justify-content: end;
+}
+
+.card__button__sprint2 {
+  display: flex;
+  gap: 5px;
+  margin: -18px 0px 0px 0px;
+  justify-content: flex-end;
 }
 
 .button {
@@ -312,5 +319,40 @@ main {
 @supports (mix-blend-mode: difference) {
   .button .button__text {
     transition: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: var(--hero-subtitle);
+  }
+
+  .title__decor {
+    font-size: var(--hero-title);
+  }
+
+  .save__button {
+    flex-direction: column;
+  }
+
+  .button__icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .dialog__icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .dialog[open] {
+    padding: 30px 40px;
+  }
+
+  .dialog__message svg {
+    width: 39px;
+    height: 39px;
+    inline-size: 90px;
   }
 }
