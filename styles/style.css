@@ -127,6 +127,7 @@ main {
   font-size: 14px;
   color: var(--color);
   opacity: 0.5;
+  mix-blend-mode: hard-light;
 }
 
 .card__details {
@@ -223,6 +224,10 @@ main {
   color: var(--button-text-color);
   font-family: var(--font-accent), fantasy;
   mix-blend-mode: difference;
+}
+
+.button__text--modal{
+  text-transform: uppercase;
 }
 
 .button:hover .button__text {
