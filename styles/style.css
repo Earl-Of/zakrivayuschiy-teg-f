@@ -172,13 +172,13 @@ main {
 
 .card__button {
   display: flex;
-  gap: 5px;
+  gap: 11px;
   justify-content: end;
 }
 
 .card__button__sprint2 {
   display: flex;
-  gap: 5px;
+  gap: 11px;
   margin: -18px 0px 0px 0px;
   justify-content: flex-end;
 }
